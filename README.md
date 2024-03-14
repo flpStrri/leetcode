@@ -18,3 +18,4 @@ cargo test
 |---| ----- | -------- | ---------- |
 | 1 | [Merged Sorted Array](https://leetcode.com/problems/merge-sorted-array/) | [Rust](src/merge_sorted_array.rs) | Easy |
 | 2 | [Remove Element](https://leetcode.com/problems/remove-element/) | [Rust](src/remove_element.rs) | Easy |
+| 3 | [Remove Duplicates from Sorted Array](https://leetcode.com/problems/remove-duplicates-from-sorted-array/) | [Rust](src/remove_duplicates_from_sorted_array.rs) | Easy |
