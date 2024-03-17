@@ -1,6 +1,6 @@
 # 🦀 Leetcode in Rust
 
-This is a collection of leetcode problems from the "Top Interview 150" list, solved in Rust.
+This is a collection of leetcode problems from the ["Top Interview 150"](https://leetcode.com/studyplan/top-interview-150/) list, solved in Rust.
 
 ## How to test
 
