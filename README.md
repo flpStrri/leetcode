@@ -21,3 +21,4 @@ cargo test
 | 3 | [Remove Duplicates from Sorted Array](https://leetcode.com/problems/remove-duplicates-from-sorted-array/) | [Rust](src/remove_duplicates_from_sorted_array.rs) | Easy |
 | 4 | [Minimum Path Sum](https://leetcode.com/problems/minimum-path-sum/) | [Rust](src/minimum_path_sum.rs) | Medium |
 | 5 | [Remove Duplicates from Sorted Array II](https://leetcode.com/problems/remove-duplicates-from-sorted-array-ii/) | [Rust](src/remove_duplicates_from_sorted_array_ii.rs) | Medium |
+| 6 | [Majority Element](https://leetcode.com/problems/majority-element/) | [Rust](src/majority_element.rs) | Easy |
