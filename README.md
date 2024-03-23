@@ -23,3 +23,4 @@ cargo test
 | 5 | [Remove Duplicates from Sorted Array II](https://leetcode.com/problems/remove-duplicates-from-sorted-array-ii/) | [Rust](src/remove_duplicates_from_sorted_array_ii.rs) | Medium |
 | 6 | [Majority Element](https://leetcode.com/problems/majority-element/) | [Rust](src/majority_element.rs) | Easy |
 | 7 | [Rotate Array](https://leetcode.com/problems/rotate-array/) | [Rust](src/rotate_array.rs) | Easy |
+| 8 | [Best Time to Buy and Sell Stock](https://leetcode.com/problems/best-time-to-buy-and-sell-stock/) | [Rust](src/best_time_to_buy_and_sell_stock.rs) | Easy |
