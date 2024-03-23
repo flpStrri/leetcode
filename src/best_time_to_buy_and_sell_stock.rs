@@ -5,25 +5,19 @@
 //
 // Return the maximum profit you can achieve from this transaction. If you cannot achieve any profit, return 0.
 
-use std::{env::current_dir, ops::IndexMut};
-
 fn solution(prices: Vec<i32>) -> i32 {
-    if prices.is_empty() {
-        return 0;
-    }
+    let mut buy_price: i32 = prices[0];
+    let mut profit: i32 = 0;
 
-    let mut profits: Vec<i32> = Vec::new();
-
-    for idx in 0..prices.len() {
-        profits.push(0);
-        let current_pivot = prices[idx];
-        for idx2 in idx..prices.len() {
-            if prices[idx2] - current_pivot > profits[idx] {
-                profits[idx] = prices[idx2] - current_pivot;
-            }
+    for price in prices {
+        if price < buy_price {
+            buy_price = price;
+        } else if price - buy_price > profit {
+            profit = price - buy_price;
         }
     }
-    profits.iter().max().unwrap().to_owned()
+
+    profit
 }
 
 #[cfg(test)]
@@ -40,5 +34,11 @@ mod tests {
     fn example_2() {
         let prices = vec![7, 6, 4, 3, 1];
         assert_eq!(solution(prices), 0);
+    }
+
+    #[test]
+    fn example_3() {
+        let prices = vec![7, 3, 8, 1, 3];
+        assert_eq!(solution(prices), 5)
     }
 }
