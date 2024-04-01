@@ -15,7 +15,6 @@ cargo test
 
 ## Problems
 | # | Title | Solution | Difficulty |
-|---| ----- | -------- | ---------- |
 | 1 | [Merged Sorted Array](https://leetcode.com/problems/merge-sorted-array/) | [Rust](src/merge_sorted_array.rs) | Easy |
 | 2 | [Remove Element](https://leetcode.com/problems/remove-element/) | [Rust](src/remove_element.rs) | Easy |
 | 3 | [Remove Duplicates from Sorted Array](https://leetcode.com/problems/remove-duplicates-from-sorted-array/) | [Rust](src/remove_duplicates_from_sorted_array.rs) | Easy |
@@ -24,3 +23,4 @@ cargo test
 | 6 | [Majority Element](https://leetcode.com/problems/majority-element/) | [Rust](src/majority_element.rs) | Easy |
 | 7 | [Rotate Array](https://leetcode.com/problems/rotate-array/) | [Rust](src/rotate_array.rs) | Easy |
 | 8 | [Best Time to Buy and Sell Stock](https://leetcode.com/problems/best-time-to-buy-and-sell-stock/) | [Rust](src/best_time_to_buy_and_sell_stock.rs) | Easy |
+| 9 | [Best Time to Buy and Sell Stock II](https://leetcode.com/problems/best-time-to-buy-and-sell-stock-ii/) | [Rust](src/best_time_to_buy_and_sell_stock_ii.rs) | Medium |
