@@ -26,3 +26,4 @@ cargo test
 | 8  | [Best Time to Buy and Sell Stock](https://leetcode.com/problems/best-time-to-buy-and-sell-stock/) | [Rust](src/best_time_to_buy_and_sell_stock.rs) | Easy |
 | 9  | [Best Time to Buy and Sell Stock II](https://leetcode.com/problems/best-time-to-buy-and-sell-stock-ii/) | [Rust](src/best_time_to_buy_and_sell_stock_ii.rs) | Medium |
 | 10 | [Jump Game](https://leetcode.com/problems/jump-game/) | [Rust](src/jump_game.rs) | Medium |
+| 11 | [Jump Game II](https://leetcode.com/problems/jump-game-ii/) | [Rust](src/jump_game_ii.rs) | Medium |
