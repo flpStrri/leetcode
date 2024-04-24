@@ -9,7 +9,7 @@ fn solution(nums: Vec<i32>) -> bool {
 
     for jump_size in nums {
         if jump_potential < 0 {
-            return false
+            return false;
         }
 
         if jump_size > jump_potential {

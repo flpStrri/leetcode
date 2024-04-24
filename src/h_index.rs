@@ -7,9 +7,9 @@
 fn solution(mut citations: Vec<i32>) -> i32 {
     citations.sort();
     let papers_count = citations.len();
-    for h_candidate in (0..papers_count) {
+    for h_candidate in 0..papers_count {
         if (papers_count - h_candidate) as i32 <= citations[h_candidate] {
-            return (papers_count - h_candidate)  as i32
+            return (papers_count - h_candidate) as i32;
         }
     }
     0

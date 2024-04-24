@@ -3,7 +3,7 @@
 //
 // Note: You can only move either down or right at any point in time.
 
-pub fn solution(grid: Vec<Vec<i32>>) -> i32 {
+fn solution(grid: Vec<Vec<i32>>) -> i32 {
     let (m, n) = (grid.len(), grid[0].len());
     let mut dp = vec![vec![0; n]; m];
     dp[0][0] = grid[0][0];

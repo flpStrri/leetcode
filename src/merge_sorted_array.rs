@@ -13,7 +13,7 @@
 // - `1 <= m + n <= 200`
 // - `-109 <= nums1[i], nums2[j] <= 109`
 
-pub fn solution(nums1: &mut Vec<i32>, m: i32, nums2: &mut Vec<i32>, n: i32) {
+fn solution(nums1: &mut Vec<i32>, m: i32, nums2: &mut Vec<i32>, n: i32) {
     if n == 0 {
         return;
     }
@@ -24,7 +24,8 @@ pub fn solution(nums1: &mut Vec<i32>, m: i32, nums2: &mut Vec<i32>, n: i32) {
     let mut last_num_index = nums1.len() - 1;
 
     while nums2_index > 0 {
-        if nums1_index > 0 && nums1[(nums1_index - 1) as usize] > nums2[(nums2_index - 1) as usize] {
+        if nums1_index > 0 && nums1[(nums1_index - 1) as usize] > nums2[(nums2_index - 1) as usize]
+        {
             nums1[last_num_index as usize] = nums1[(nums1_index - 1) as usize];
             nums1_index -= 1;
         } else {

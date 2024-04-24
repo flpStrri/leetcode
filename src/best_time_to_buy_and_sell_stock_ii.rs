@@ -13,7 +13,9 @@ fn solution(prices: Vec<i32>) -> i32 {
         if price > buy_price {
             profit += price - buy_price;
             buy_price = price
-        } else { buy_price = price }
+        } else {
+            buy_price = price
+        }
     }
 
     profit

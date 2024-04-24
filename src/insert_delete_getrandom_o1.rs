@@ -61,7 +61,7 @@ impl RandomizedSet {
 
     fn get_random(&mut self) -> i32 {
         if self.data_size == 1 {
-            return self.data_vec[0]
+            return self.data_vec[0];
         }
 
         let i = self.rnd.gen_range(0..self.data_size);
@@ -113,7 +113,9 @@ mod tests {
             random_values.insert(randomized_set.get_random());
         }
 
-        assert_eq!(random_values, std::collections::HashSet::from_iter(vec![1, 10, 20, 30]));
-
+        assert_eq!(
+            random_values,
+            std::collections::HashSet::from_iter(vec![1, 10, 20, 30])
+        );
     }
 }
