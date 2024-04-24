@@ -12,7 +12,7 @@
 use rand::rngs::ThreadRng;
 use rand::Rng;
 
-struct RandomizedSet {
+pub struct RandomizedSet {
     data_map: std::collections::HashMap<i32, usize>,
     data_vec: Vec<i32>,
     data_size: usize,
@@ -29,7 +29,7 @@ impl RandomizedSet {
         }
     }
 
-    fn insert(&mut self, val: i32) -> bool {
+    pub fn insert(&mut self, val: i32) -> bool {
         if self.data_map.contains_key(&val) {
             return false;
         }
@@ -40,7 +40,7 @@ impl RandomizedSet {
         true
     }
 
-    fn remove(&mut self, val: i32) -> bool {
+    pub fn remove(&mut self, val: i32) -> bool {
         let possible_value_index = self.data_map.remove(&val);
         if possible_value_index.is_none() {
             return false;
@@ -59,7 +59,7 @@ impl RandomizedSet {
         true
     }
 
-    fn get_random(&mut self) -> i32 {
+    pub fn get_random(&mut self) -> i32 {
         if self.data_size == 1 {
             return self.data_vec[0];
         }
@@ -75,38 +75,38 @@ mod tests {
     #[test]
     fn test_1() {
         let mut randomized_set = RandomizedSet::new();
-        assert_eq!(randomized_set.insert(1), true);
-        assert_eq!(randomized_set.remove(2), false);
-        assert_eq!(randomized_set.insert(2), true);
+        assert!(randomized_set.insert(1));
+        assert!(!randomized_set.remove(2));
+        assert!(randomized_set.insert(2));
 
         let random_value = randomized_set.get_random();
         assert!(random_value > 0);
         assert!(random_value < 3);
 
-        assert_eq!(randomized_set.remove(1), true);
-        assert_eq!(randomized_set.insert(2), false);
+        assert!(randomized_set.remove(1));
+        assert!(!randomized_set.insert(2));
         assert_eq!(randomized_set.get_random(), 2);
     }
     #[test]
     fn test_2() {
         let mut randomized_set = RandomizedSet::new();
-        assert_eq!(randomized_set.remove(0), false);
-        assert_eq!(randomized_set.remove(0), false);
-        assert_eq!(randomized_set.insert(0), true);
+        assert!(!randomized_set.remove(0));
+        assert!(!randomized_set.remove(0));
+        assert!(randomized_set.insert(0));
 
         let random_value = randomized_set.get_random();
         assert_eq!(random_value, 0);
 
-        assert_eq!(randomized_set.remove(0), true);
-        assert_eq!(randomized_set.insert(0), true);
+        assert!(randomized_set.remove(0));
+        assert!(randomized_set.insert(0));
     }
     #[test]
     fn test_3() {
         let mut randomized_set = RandomizedSet::new();
-        assert_eq!(randomized_set.insert(1), true);
-        assert_eq!(randomized_set.insert(10), true);
-        assert_eq!(randomized_set.insert(20), true);
-        assert_eq!(randomized_set.insert(30), true);
+        assert!(randomized_set.insert(1));
+        assert!(randomized_set.insert(10));
+        assert!(randomized_set.insert(20));
+        assert!(randomized_set.insert(30));
 
         let mut random_values = std::collections::HashSet::new();
         for _ in 0..100 {

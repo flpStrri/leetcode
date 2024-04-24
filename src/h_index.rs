@@ -4,7 +4,7 @@
 // According to the definition of h-index on Wikipedia:
 // The h-index is defined as the maximum value of h such that the given researcher has published at least h papers that have each been cited at least h times.
 
-fn solution(mut citations: Vec<i32>) -> i32 {
+pub fn solution(mut citations: Vec<i32>) -> i32 {
     citations.sort();
     let papers_count = citations.len();
     for h_candidate in 0..papers_count {

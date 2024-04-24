@@ -13,7 +13,7 @@
 // - `1 <= m + n <= 200`
 // - `-109 <= nums1[i], nums2[j] <= 109`
 
-fn solution(nums1: &mut [i32], m: i32, nums2: &mut [i32], n: i32) {
+pub fn solution(nums1: &mut [i32], m: i32, nums2: &mut [i32], n: i32) {
     if n == 0 {
         return;
     }

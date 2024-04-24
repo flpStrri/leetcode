@@ -5,7 +5,7 @@
 //
 // Find and return the maximum profit you can achieve.
 
-fn solution(prices: Vec<i32>) -> i32 {
+pub fn solution(prices: Vec<i32>) -> i32 {
     let mut profit = 0;
     let mut buy_price = prices[0];
 

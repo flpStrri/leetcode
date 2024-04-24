@@ -8,7 +8,7 @@
 //
 // Return the minimum number of jumps to reach nums[n - 1]. The test cases are generated such that you can reach nums[n - 1].
 
-fn solution(nums: Vec<i32>) -> i32 {
+pub fn solution(nums: Vec<i32>) -> i32 {
     let final_position = (nums.len() - 1) as i32;
 
     let mut jump_count: i32 = 0;

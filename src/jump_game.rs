@@ -4,7 +4,7 @@
 //
 // Return true if you can reach the last index, or false otherwise.
 
-fn solution(nums: Vec<i32>) -> bool {
+pub fn solution(nums: Vec<i32>) -> bool {
     let mut jump_potential: i32 = nums[0];
 
     for jump_size in nums {
@@ -29,12 +29,12 @@ mod tests {
     #[test]
     fn example_1() {
         let nums = vec![2, 3, 1, 1, 4];
-        assert_eq!(solution(nums), true);
+        assert!(solution(nums));
     }
 
     #[test]
     fn example_2() {
         let nums = vec![3, 2, 1, 0, 4];
-        assert_eq!(solution(nums), false);
+        assert!(!solution(nums));
     }
 }
