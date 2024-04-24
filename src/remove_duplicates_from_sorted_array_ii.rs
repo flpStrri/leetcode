@@ -11,7 +11,7 @@
 // Do not allocate extra space for another array.
 // You must do this by modifying the input array in-place with O(1) extra memory.
 
-pub fn solution(nums: &mut Vec<i32>) -> i32 {
+pub fn solution(nums: &mut [i32]) -> i32 {
     if nums.is_empty() {
         return 0;
     }

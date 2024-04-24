@@ -1,7 +1,7 @@
 // # Rotate Array
 // Given an integer array nums, rotate the array to the right by k steps, where k is non-negative.
 
-pub fn rotate(nums: &mut Vec<i32>, k: i32) {
+pub fn rotate(nums: &mut [i32], k: i32) {
     let nums_len = nums.len();
     if nums_len <= 1 {
         return;
