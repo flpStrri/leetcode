@@ -28,3 +28,5 @@ cargo test
 | 10 | [Jump Game](https://leetcode.com/problems/jump-game/) | [Rust](src/jump_game.rs) | Medium |
 | 11 | [Jump Game II](https://leetcode.com/problems/jump-game-ii/) | [Rust](src/jump_game_ii.rs) | Medium |
 | 12 | [H Index](https://leetcode.com/problems/h-index/) | [Rust](src/h_index.rs) | Medium |
+| 13 | [Insert Delete GetRandom O(1)](https://leetcode.com/problems/insert-delete-getrandom-o1/) | [Rust](src/insert_delete_getrandom_o1.rs) | Medium |
+
