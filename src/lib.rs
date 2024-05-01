@@ -1,5 +1,6 @@
 mod best_time_to_buy_and_sell_stock;
 mod best_time_to_buy_and_sell_stock_ii;
+mod candy;
 mod h_index;
 mod insert_delete_getrandom_o1;
 mod jump_game;
