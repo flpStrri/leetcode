@@ -1,6 +1,7 @@
 mod best_time_to_buy_and_sell_stock;
 mod best_time_to_buy_and_sell_stock_ii;
 mod candy;
+mod gas_station;
 mod h_index;
 mod insert_delete_getrandom_o1;
 mod jump_game;
@@ -14,4 +15,4 @@ mod remove_duplicates_from_sorted_array_ii;
 mod remove_element;
 mod roman_to_integer;
 mod rotate_array;
-mod gas_station;
+mod trapping_rain_water;
