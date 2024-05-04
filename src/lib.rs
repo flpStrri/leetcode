@@ -12,5 +12,6 @@ mod product_of_array_except_self;
 mod remove_duplicates_from_sorted_array;
 mod remove_duplicates_from_sorted_array_ii;
 mod remove_element;
+mod roman_to_integer;
 mod rotate_array;
 mod gas_station;

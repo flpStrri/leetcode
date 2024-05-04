@@ -32,4 +32,6 @@ cargo test
 | 14 | [Product of Array Except Self](https://leetcode.com/problems/product-of-array-except-self/) | [Rust](src/product_of_array_except_self.rs) | Medium |
 | 15 | [Gas Station](https://leetcode.com/problems/gas-station/) | [Rust](src/gas_station.rs) | Medium |
 | 16 | [Candy](https://leetcode.com/problems/candy/) | [Rust](src/candy.rs) | Hard |
+||||
+| 18 | [Roman to Integer](https://leetcode.com/problems/roman-to-integer/) | [Rust](src/roman_to_integer.rs) | Easy |
 
