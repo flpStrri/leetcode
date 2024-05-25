@@ -4,6 +4,7 @@ mod candy;
 mod gas_station;
 mod h_index;
 mod insert_delete_getrandom_o1;
+mod integer_to_roman;
 mod jump_game;
 mod jump_game_ii;
 mod majority_element;
